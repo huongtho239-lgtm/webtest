@@ -3,5 +3,8 @@ services:
     name: flutter-web
     env: node
     plan: free
+    branch: main          # branch Git chứa code
+    rootDirectory: ""     # để trống nếu build/web nằm ở root repo
     buildCommand: "npm install"
     startCommand: "npm start"
+    autoDeploy: true   
